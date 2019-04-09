@@ -12,7 +12,7 @@ MORSE = {'.-':    'a', '-...':  'b', '-.-.':  'c',
          '--...': '7', '---..': '8', '----.': '9'
         }
 
-def morse_decoder(code):
+def morse_decoder(code: str) -> str:
     #replace this for solution
     return code
 
