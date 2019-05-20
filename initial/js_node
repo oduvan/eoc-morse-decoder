@@ -12,19 +12,18 @@ var MORSE = {'.-':    'a', '-...':  'b', '-.-.':  'c',
              '--...': '7', '---..': '8', '----.': '9'
             };
 
-function morseDecoder(code) {
+export function morseDecoder(code: string): string {
     // your code here
     return code;
 }
 
-var assert = require('assert');
-if (!global.is_checking) {
-    console.log('Example:')
-    console.log(morseDecoder('... --- ...'))
+import * as assert from 'assert';
 
-    // These "asserts" are used for self-checking and not for an auto-testing
-    assert.equal(morseDecoder("... --- -- .   - . -..- -"), "Some text")
-    assert.equal(morseDecoder("..--- ----- .---- ---.."), "2018")
-    assert.equal(morseDecoder(".. -   .-- .- ...   .-   --. --- --- -..   -.. .- -.--"), "It was a good day")
-    console.log("Coding complete? Click 'Check' to earn cool rewards!");
-}
+console.log('Example:')
+console.log(morseDecoder('... --- ...'))
+
+// These "asserts" are used for self-checking and not for an auto-testing
+assert.equal(morseDecoder("... --- -- .   - . -..- -"), "Some text")
+assert.equal(morseDecoder("..--- ----- .---- ---.."), "2018")
+assert.equal(morseDecoder(".. -   .-- .- ...   .-   --. --- --- -..   -.. .- -.--"), "It was a good day")
+console.log("Coding complete? Click 'Check' to earn cool rewards!");
